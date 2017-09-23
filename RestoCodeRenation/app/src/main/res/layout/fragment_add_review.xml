@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="assigment.dawson.restocoderenation.AddReviewFragment"
+    android:id="@+id/reviewAddFields">
+
+    <TextView
+        android:text="@string/addNewReviewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/textView2"
+        android:layout_gravity="center"
+        android:textColor="@color/dawsonblue"
+        android:textSize="25dp"
+        android:fontFamily="cursive"/>
+
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:background="@color/infoText"
+        android:textSize="5dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="text"
+        android:hint="@string/review_title"
+        android:id="@+id/review_title" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:inputType="text"
+        android:hint="@string/review_text"
+        android:id="@+id/review_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:hint="@string/review_rating"
+        android:id="@+id/review_rating" />
+
+        <TextView
+        android:text="@string/rating"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:background="@color/infoText"
+        android:textSize="5dp"
+        />
+
+    <Button
+        android:text="@string/resto_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addReview_submit"
+        android:onClick="addReviewToDB"
+        android:background="@color/dawsonblue"
+        android:textColor="@color/buttonBack"/>
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:textColor="@color/dawsonblue"
+        android:textStyle="bold"
+        android:id="@+id/errorMsg"
+        />
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="assigment.dawson.restocoderenation.RestoAddFragment"
+    android:id="@+id/restoAddFields">
+
+    <TextView
+        android:text="@string/addNewRestoHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_gravity="center"
+        android:textColor="@color/dawsonblue"
+        android:textSize="25dp"
+        android:fontFamily="cursive"/>
+
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/infoText"
+        android:textSize="5dp"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/resto_name"
+        android:ems="10"
+        android:id="@+id/resto_name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/resto_address"
+        android:ems="10"
+        android:id="@+id/resto_address" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/resto_city"
+        android:ems="10"
+        android:id="@+id/resto_city" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:hint="@string/resto_zip"
+        android:ems="10"
+        android:id="@+id/resto_zip" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="@string/resto_tele"
+        android:ems="10"
+        android:id="@+id/resto_tele" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/resto_gen"
+        android:ems="10"
+        android:id="@+id/resto_gen" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/infoText"
+        android:textSize="5dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="@string/resto_range"
+        android:ems="10"
+        android:id="@+id/resto_pRange" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/resto_notes"
+        android:hint="@string/resto_notes"/>
+
+    <Button
+        android:text="@string/resto_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addResto_submit"
+        android:onClick="addRestoToDB"
+        android:background="@color/dawsonblue"
+        android:textColor="@color/buttonBack"/>
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:textColor="@color/dawsonblue"
+        android:textStyle="bold"
+        android:id="@+id/errorMsg"
+        />
+
+</LinearLayout>

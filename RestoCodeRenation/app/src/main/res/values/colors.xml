@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dawsonblue">#D32F2F</color>
+    <color name="infoBack"> #D32F2F </color>
+
+    <color name="buttonBack">#fff3f3f3 </color>
+
+    <color name="infoText"> #000000 </color>
+
+</resources>

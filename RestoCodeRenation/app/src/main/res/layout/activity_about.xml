@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="assigment.dawson.restocoderenation.AboutActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="top">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/dawson_college"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:id="@+id/dawson_logo"
+        android:padding="5dp"
+        android:onClick="openDawson"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/courseid"
+        android:textColor="@color/dawsonblue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/course"
+        android:padding="5dp"
+        android:onClick="openCS"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/dawsonblue"
+        android:text="@string/authors"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="top">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/brooker"
+            android:id="@+id/brookerImage"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.75"
+            android:onClick="infoBrooker"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/dawsonblue"
+            android:text="@string/brooker"
+            android:layout_weight="0.25"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/renuchan"
+            android:id="@+id/renuchanImage"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.75"
+            android:onClick="infoRenuchan"/>/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/dawsonblue"
+            android:text="@string/renuchan"
+            android:layout_weight="0.25"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:src="@drawable/dimitriimg2"
+            android:id="@+id/dmitriimg"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.75"
+            android:onClick="infoDmitri"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/dawsonblue"
+            android:text="@string/dimitri"
+            android:layout_weight="0.25"/>
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/pishchalov"
+            android:id="@+id/pishchalovImage"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.75"
+            android:onClick="infoDenys"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/dawsonblue"
+            android:text="@string/denys"
+            android:layout_weight="0.25"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/kichev"
+            android:id="@+id/kinchevImage"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.75"
+            android:onClick="infoKichev"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/dawsonblue"
+            android:text="@string/kichev"
+            android:layout_weight="0.25"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
